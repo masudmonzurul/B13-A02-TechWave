@@ -59,7 +59,7 @@ nav div button {
     border-radius: 20px;
     padding: 12px 16px;
     border: none;
-    
+
 }
 
 nav div button a {
@@ -69,27 +69,31 @@ nav div button a {
     font-weight: 600;
 }
 
-.hero{
+.hero {
     height: 760px;
     background-image: url(../assets/hero-bg.png);
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
 }
 
-#center-bg{
+#center-bg {
     width: 350px;
     height: 350px;
     position: relative;
     left: 625px;
     right: 625px;
     top: 101px;
-    bottom:309px;
+    bottom: 309px;
 }
-#center{
+
+#center {
     position: relative;
     left: 390px;
     top: 20px;
 }
 
-.center-image div{
+.center-image div {
     width: 75px;
     height: 38px;
     background-color: #00FF88;
@@ -98,9 +102,64 @@ nav div button a {
     top: -240px;
     left: 890px;
 }
-.center-image div p{
+
+.center-image div p {
     color: #1A0B2E;
     font-size: 16px;
     font-weight: 600;
     padding: 8px 16px;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.hero-text p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.hero-btn {
+    /* margin: -20px auto; */
+    margin-top: -20px;
+    margin-bottom: 101px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.first-btn {
+    background-image: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border-radius: 25px;
+    padding: 12px;
+    border: none;
+}
+
+.first-btn img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+.second-btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #00FF88;
+    border: 1px solid #00FF88;
+    border-radius: 25px;
+    padding: 12px;
+    background-color: transparent;
+}
+
+.second-btn img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
 }
