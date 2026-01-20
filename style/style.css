@@ -12,6 +12,7 @@ body {
     width: 1600px;
     margin: 0 auto;
     color: #FFFFFF;
+    background-color: ##1A0B2E;
 }
 
 /* header css */
@@ -121,7 +122,7 @@ nav div button a {
     font-weight: 400;
     letter-spacing: 0%;
     text-align: center;
-
+    opacity: 60%;
 }
 
 .hero-btn {
@@ -162,4 +163,196 @@ nav div button a {
     display: inline-block;
     vertical-align: middle;
     margin: 5px;
+}
+
+.about-podcast {
+    background-color: #1A0B2E;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0%;
+    margin-bottom: 20px;
+}
+
+.about-podcast p {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0%;
+    line-height: 20px;
+    opacity: 60%;
+}
+
+hr {
+    border: .1px solid #FFFFFF;
+    opacity: 10%;
+    margin: 120px 40px;
+}
+
+.about-podcast .info {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 120px;
+    align-items: center;
+
+}
+
+.info h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #00FF88;
+    text-align: center;
+}
+
+.info h2 span {
+    font-size: 40px;
+}
+
+.info p {
+    font-size: 16px;
+    opacity: 60%;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.more-info {
+    background-color: #230E3D;
+    padding: 60px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 1200px;
+    margin: auto;
+}
+
+.audio-qlt {
+    grid-row: 1/ span 2;
+    background-color: #351165;
+    border-radius: 40px;
+    width: 380px;
+    padding: 108px 40px;
+}
+
+
+.mobile-friendly {
+    grid-column: 2/ span 2;
+    background-color: #351165;
+    border-radius: 40px;
+    padding: 30px 20px;
+}
+
+.global {
+    grid-column: 2/ span 2;
+    background-color: #351165;
+    border-radius: 40px;
+    padding: 30px 20px;
+}
+
+.interview {
+    grid-column: 1/ span 2;
+    background-color: #351165;
+    border-radius: 40px;
+    padding: 30px 20px;
+}
+
+.resources {
+    background-color: #351165;
+    border-radius: 40px;
+    padding: 30px 20px;
+}
+
+.info-head {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 24px 0px;
+}
+
+.info-details {
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 60%;
+}
+
+.card {
+    background-color: #1A0B2E;
+    width: 1600px;
+}
+
+.card-container {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card-holder {
+    width: 33%;
+    background-color: #351165;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.card-holder iframe {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card-holder h2 {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.card-holder p {
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 60%;
+    padding: 20px;
+
+}
+
+.host {
+    padding-top: 80px;
+}
+
+.host-info {
+    background-color: #351165;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.text p {
+    font-size: 16px;
+    opacity: 60%;
+
+}
+
+.text div {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
 }
