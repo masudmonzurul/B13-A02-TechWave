@@ -68,3 +68,39 @@ nav div button a {
     font-size: 16px;
     font-weight: 600;
 }
+
+.hero{
+    height: 760px;
+    background-image: url(../assets/hero-bg.png);
+}
+
+#center-bg{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 625px;
+    right: 625px;
+    top: 101px;
+    bottom:309px;
+}
+#center{
+    position: relative;
+    left: 390px;
+    top: 20px;
+}
+
+.center-image div{
+    width: 75px;
+    height: 38px;
+    background-color: #00FF88;
+    border-radius: 20px;
+    position: relative;
+    top: -240px;
+    left: 890px;
+}
+.center-image div p{
+    color: #1A0B2E;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px;
+}
