@@ -12,13 +12,11 @@ body {
     width: 1600px;
     margin: 0 auto;
     color: #FFFFFF;
-    background-color: ##1A0B2E;
+    background-color: #1A0B2E;
 }
 
 /* header css */
-header {
-    background-color: #1A0B2E;
-}
+
 
 nav {
     padding: 30px 0;
@@ -30,13 +28,13 @@ nav {
 nav div p {
     font-size: 32px;
     font-weight: 700;
+
 }
 
 .coloredtext {
     background-image: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
     -webkit-background-clip: text;
     color: transparent;
-
 }
 
 nav ul {
@@ -73,6 +71,8 @@ nav div button a {
 .hero {
     height: 760px;
     background-image: url(../assets/hero-bg.png);
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -94,6 +94,7 @@ nav div button a {
     top: 20px;
 }
 
+
 .center-image div {
     width: 75px;
     height: 38px;
@@ -102,6 +103,11 @@ nav div button a {
     position: relative;
     top: -240px;
     left: 890px;
+    transition: width 3s;
+}
+
+.center-image div:hover {
+    width: 100px;
 }
 
 .center-image div p {
@@ -109,6 +115,7 @@ nav div button a {
     font-size: 16px;
     font-weight: 600;
     padding: 8px 16px;
+    text-align: center;
 }
 
 .hero-text h1 {
@@ -126,7 +133,6 @@ nav div button a {
 }
 
 .hero-btn {
-    /* margin: -20px auto; */
     margin-top: -20px;
     margin-bottom: 101px;
     margin-left: auto;
@@ -173,8 +179,12 @@ h1 {
     text-align: center;
     font-size: 48px;
     font-weight: 700;
-    letter-spacing: 0%;
     margin-bottom: 20px;
+}
+
+
+.about-podcast h1 {
+    padding-top: 50px;
 }
 
 .about-podcast p {
@@ -183,10 +193,11 @@ h1 {
     letter-spacing: 0%;
     line-height: 20px;
     opacity: 60%;
+    padding-bottom: 20px;
 }
 
 hr {
-    border: .1px solid #FFFFFF;
+    border: 0.1px solid #FFFFFF;
     opacity: 10%;
     margin: 120px 40px;
 }
@@ -302,6 +313,7 @@ hr {
     overflow: hidden;
 }
 
+
 .card-holder iframe {
     padding: 0;
     margin: 0 auto;
@@ -348,11 +360,204 @@ hr {
 .text p {
     font-size: 16px;
     opacity: 60%;
-
 }
 
 .text div {
     display: flex;
     gap: 10px;
     margin-top: 16px;
+}
+
+footer {
+    background-image: url(../assets/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-main {
+    width: 85%;
+    margin: auto;
+    padding: 120px;
+}
+
+.footer-main>p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    opacity: 60%;
+}
+
+footer .container {
+    padding-top: 10px;
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* responsive area */
+
+.hide-for-mobile {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .hide {
+        display: none;
+    }
+
+    .hide-for-mobile {
+        display: unset;
+    }
+
+    body {
+        width: 100vw;
+    }
+
+    .footer-main {
+        padding: 5px;
+        margin: 0;
+    }
+
+    footer .container {
+        padding-top: 5px;
+        width: 70%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .host {
+        padding: 10px;
+        width: 100vw;
+    }
+
+    .host-info {
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .text>h2,
+    .text>p {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .text div {
+        justify-content: center;
+    }
+
+    .card {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card-container {
+        width: 100vw;
+        gap: 20px;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .card-holder {
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin: 0;
+    }
+
+    .audio-qlt {
+        grid-column: unset;
+        width: unset;
+        padding: 30px 20px;
+    }
+
+
+    .mobile-friendly {
+        grid-column: unset;
+        padding: 30px 20px;
+    }
+
+    .global {
+        grid-column: unset;
+    }
+
+    .interview {
+        grid-column: unset;
+    }
+
+    .more-info {
+        padding: 10px;
+    }
+
+    .about-podcast .info {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .about-podcast {
+        padding: 20px;
+    }
+
+    hr {
+        border: 0.1px solid #FFFFFF;
+        opacity: 10%;
+        margin: 40px;
+    }
+
+    .hero {
+        width: 100vw;
+        height: 450px;
+        background-image: url(../assets/hero-bg.png);
+        display: unset;
+        flex-direction: unset;
+        gap: unset;
+    }
+
+    #center-bg {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 100px;
+        right: 100px;
+        top: 40px;
+        bottom: unset;
+    }
+
+    #center {
+        width: 100px;
+        position: relative;
+        left: -50px;
+        top: 10px;
+    }
+
+
+    .center-image div {
+        width: 75px;
+        height: 38px;
+        background-color: #00FF88;
+        border-radius: 20px;
+        position: relative;
+        top: -170px;
+        left: 250px;
+        transition: width 3s;
+    }
+
+    .hero-btn {
+        margin: 30px 50px;
+
+
+    }
+
+
+
 }
